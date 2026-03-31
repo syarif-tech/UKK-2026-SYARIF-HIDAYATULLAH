@@ -1,0 +1,286 @@
+/* ================= GLOBAL ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #f4f6f9;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ================= LOGIN ================= */
+#bg-login-admin,
+#bg-login-siswa {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bg-login-admin {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+#bg-login-siswa {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.box-login {
+    width: 350px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.box-login h2 {
+    margin-bottom: 25px;
+}
+
+.input-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #2f77cf;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* ================= INDEX ================= */
+#bg-index {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #e2e7ef, #2f77cf);
+    position: relative;
+}
+
+#bg-index .logo {
+    width: 80px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#bg-index .container {
+    background: white;
+    padding: 40px;
+    width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.login-option {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* ================= DASHBOARD UMUM ================= */
+#bg-dashboard {
+    background: #ecf0f1;
+}
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ================= SIDEBAR (ADMIN) ================= */
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    padding: 25px;
+    color: white;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    border-radius: 8px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: #34495e;
+}
+
+/* ================= MAIN CONTENT ================= */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* ================= NAVBAR (SISWA) ================= */
+.navbar {
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    padding: 15px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 15px;
+}
+
+/* ================= HEADER SISWA ================= */
+.header {
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    padding: 40px;
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+/* ================= CARD ================= */
+.cards,
+.card-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    flex: 1;
+    padding: 25px;
+    border-radius: 15px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.total { background: linear-gradient(135deg, #36b9cc, #1cc88a); color: white; }
+.menunggu { background: linear-gradient(135deg, #f6c23e, #e74a3b); color: white; }
+.selesai { background: linear-gradient(135deg, #1cc88a, #17a673); color: white; }
+
+/* ================= BOX ================= */
+.box,
+.aspirasi-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* ================= TABLE ================= */
+.table-status {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-status th,
+.table-status td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-status th {
+    background: #2c3e50;
+    color: white;
+}
+
+/* ================= BADGE ================= */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.proses { background: orange; }
+.ditolak { background: red; }
+
+/* ================= FEEDBACK ================= */
+.feedback-item {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #2c3e50;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width: 768px){
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .cards,
+    .card-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
